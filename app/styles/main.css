@@ -1,0 +1,31 @@
+
+/* Fonts */
+/* Colors */
+/* Grid  */
+/*@widthXs: 768px;*/
+
+/* Fonts */
+/* Colors */
+/* Grid  */
+/*@widthXs: 768px;*/
+.layout {
+  margin: 0;
+  padding: 20px;
+}
+
+/* Fonts */
+/* Colors */
+/* Grid  */
+/*@widthXs: 768px;*/
+.diff {
+  width: 100%;
+  margin-bottom: 60px;
+  font: normal 12px/16px "PT Mono", serif;
+}
+.diff .texttitle {
+  width: 48%;
+}
+.diff td,
+.diff th {
+  font: normal 12px/16px "PT Mono", serif !important;
+}

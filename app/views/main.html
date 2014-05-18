@@ -1,0 +1,36 @@
+<div class="layout-header row">
+  <h3 class="col-lg-6 text-muted">diffOnline</h3>
+  <div class="col-lg-6 pull-right">
+    <ul class="nav nav-pills">
+      <li class="active"><a ng-href="/">Home</a></li>
+      <li><a ng-href="#">About</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12" diff-results>
+
+  </div>
+</div>
+
+<div class="jumbotron" ng-controller="DiffTextsCtrl">
+  <div class="row">
+    <div class="col-lg-6">
+      <h3 ng-bind="srcOldName"></h3>
+      <textarea name="srcText" id="srcText" cols="30" rows="10" class="form-control" ng-model="txtSrc"></textarea>
+    </div>
+    <div class="col-lg-6">
+      <h3 ng-bind="srcNewName"></h3>
+      <textarea name="newText" id="newText" cols="30" rows="10" class="form-control" ng-model="txtNew"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <div style="text-align: center; margin-top: 40px;">
+      <p><span class="btn btn-lg btn-success" ng-click="diffTexts()">Let's diff it!</span></p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+</div>

@@ -1,0 +1,70 @@
+/* Fonts */
+@fontSimple: Arial, sans-serif;
+@fontText: "PT Serif", serif;
+@fontMono: "PT Mono", serif;
+
+.fontSimple() { font: normal 13px/@unit2 @fontSimple; }
+.fontBiggest() { font: normal 44px/@unit7 @fontTextXLight; }
+.fontBigger() { font: normal 26px/@unit4 @fontText; }
+.fontText() { font: normal 24px/@unit4 @fontText; }
+.fontMono() { font: normal 12px/@unit2 @fontMono; }
+
+/* Colors */
+@white: rgb(255,255,255);
+@black: rgb(0,0,0);
+@blue: rgb(0,119,189);
+@green: rgb(40,180,75);
+@red: rgb(217,66,40);
+@yellow: rgb(255,207,0);
+@yellowTransLight: rgba(255,207,0,0.8);
+@yellowTrans: rgba(255,207,0,0.2);
+@grey: rgb(190,190,190);
+@greyTrans: rgba(190,190,190,0.5);
+@greyPreMiddle: rgb(165,165,165);
+@greyMiddle: rgb(145,145,145);
+@greyDark: rgb(95,95,95);
+@greyDarken: rgb(55,55,55);
+@greyDarkest: rgb(35,35,35);
+@greyLight: rgb(240,240,240);
+@greyLightTrans: rgba(240,240,240,0.5);
+
+
+/* Grid  */
+
+@unit1: 8px;
+@unit2: (@unit1 * 2);
+@unit3: (@unit1 * 3);
+@unit4: (@unit1 * 4);
+@unit5: (@unit1 * 5);
+@unit6: (@unit1 * 6);
+@unit7: (@unit1 * 7);
+@unit8: (@unit1 * 8);
+@unit9: (@unit1 * 9);
+@unit10: (@unit1 * 10);
+@unit11: (@unit1 * 11);
+@unit12: (@unit1 * 12);
+@unit13: (@unit1 * 13);
+@unit14: (@unit1 * 14);
+@unit15: (@unit1 * 15);
+
+@unitHalf: @unit1 / 2;
+@unitAndHalf: (@unit1 * 1.5);
+
+
+@widthLg: 1280px;
+@widthSm: 1024px;
+@widthXs: 0px;
+/*@widthXs: 768px;*/
+
+@colLgWidth: @unit15;
+@colLgHalf: @colLgWidth / 2;
+@colLgWithHalf: @colLgWidth + @colSmWidth / 2;
+
+@colSmWidth: @unit15;
+@colSmHalf: @colSmWidth / 2;
+@colSmWithHalf: @colSmWidth + @colSmWidth / 2;
+
+@colXsWidth: @unit1 * 26;
+@colXsGap: @unit4;
+@colXsHalf: @colXsWidth / 2;
+@colXsWithHalf: @colXsWidth + @colXsGap + @colXsWidth / 2;
